@@ -89,4 +89,3 @@ Every rental on Lendora is envisioned to be backed by:
 
 ---
 
-Built with ❤️ for the Bangladeshi Creative Community.

@@ -2,10 +2,10 @@ import { User, Listing, Booking, Review, Message } from './types';
 
 export const currentUser: User = {
   id: 'usr_1',
-  name: 'Tanvir Ahmed',
-  email: 'tanvir.ahmed@example.com',
+  name: 'Raisul Islam',
+  email: 'raisul.islam@example.com',
   phone: '+880 1712-345678',
-  avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&auto=format&fit=crop&q=80',
+  avatar: 'https://gravatar.com/avatar/780377aad6c69a1bbbeb8937018f106f?s=400&d=robohash&r=x',
   role: 'both',
   rating: 4.94,
   reviewCount: 42,
@@ -24,10 +24,10 @@ export const sampleUsers: User[] = [
   currentUser,
   {
     id: 'usr_2',
-    name: 'Farhan Tanvir',
-    email: 'farhan.v@example.com',
+    name: 'Md. Labib Kabir',
+    email: 'labib.k@example.com',
     phone: '+880 1819-876543',
-    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&auto=format&fit=crop&q=80',
+    avatar: 'https://gravatar.com/avatar/66be080db85d3f08b37797a6cd0a9b6b?s=400&d=robohash&r=x',
     role: 'host',
     rating: 4.98,
     reviewCount: 135,
@@ -43,10 +43,10 @@ export const sampleUsers: User[] = [
   },
   {
     id: 'usr_3',
-    name: 'Nusrat Jahan',
-    email: 'nusrat.j@example.com',
+    name: 'Ahnaf Ferdous',
+    email: 'ahnaf.f@example.com',
     phone: '+880 1911-223344',
-    avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&auto=format&fit=crop&q=80',
+    avatar: 'https://api.dicebear.com/7.x/notionists/svg?seed=Deerin&backgroundColor=d4f1c5&radius=50',
     role: 'host',
     rating: 4.89,
     reviewCount: 74,
@@ -62,10 +62,10 @@ export const sampleUsers: User[] = [
   },
   {
     id: 'usr_4',
-    name: 'Shakil Mahmud',
-    email: 'shakil.m@example.com',
+    name: 'Sayma Sultana Rupoma',
+    email: 'sayma.r@example.com',
     phone: '+880 1552-998877',
-    avatar: 'https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=400&auto=format&fit=crop&q=80',
+    avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Ahnaf&backgroundColor=ffd5dc&radius=50',
     role: 'host',
     rating: 4.92,
     reviewCount: 58,
@@ -78,6 +78,25 @@ export const sampleUsers: User[] = [
     location: 'Uttara, Dhaka',
     responseRate: 98,
     responseTime: 'within an hour'
+  },
+  {
+    id: 'usr_5',
+    name: 'Meherun Muntaha Deerin',
+    email: 'meherun.d@example.com',
+    phone: '+880 1611-001122',
+    avatar: 'https://gravatar.com/avatar/31cad89bc1bac3c6b8ddfaf4f189835d?s=400&d=monsterid&r=x',
+    role: 'host',
+    rating: 4.95,
+    reviewCount: 45,
+    joinedDate: 'February 2024',
+    verified: true,
+    phoneVerified: true,
+    idVerified: true,
+    nidVerified: true,
+    bio: 'Event coordinator and technical specialist focused on reliable equipment solutions.',
+    location: 'Mirpur, Dhaka',
+    responseRate: 97,
+    responseTime: 'within 20 minutes'
   }
 ];
 
@@ -333,7 +352,7 @@ export const initialReviews: Review[] = [
     communicationRating: 5,
     qualityRating: 5,
     timelinessRating: 5,
-    comment: 'The Sony a7IV kit was in immaculate condition. Farhan was extremely helpful with pickup instructions in Banani and included an extra battery. Highly recommended!',
+    comment: 'The Sony a7IV kit was in immaculate condition. Labib was extremely helpful with pickup instructions in Banani and included an extra battery. Highly recommended!',
     createdAt: '2026-09-12'
   },
   {
@@ -345,7 +364,7 @@ export const initialReviews: Review[] = [
     communicationRating: 5,
     qualityRating: 5,
     timelinessRating: 5,
-    comment: 'Absolute dream daylight studio in Dhanmondi for our fashion shoot. Nusrat was a wonderful host and the natural light is stunning.',
+    comment: 'Absolute dream daylight studio in Dhanmondi for our fashion shoot. Ahnaf was a wonderful host and the natural light is stunning.',
     createdAt: '2026-09-28'
   },
   {
@@ -368,7 +387,7 @@ export const initialMessages: Message[] = [
     senderId: 'usr_1',
     receiverId: 'usr_2',
     listingId: 'lst_1',
-    content: 'Hi Farhan! Is the Sony a7IV kit available for pickup this coming Tuesday morning around 9:00 AM at Banani?',
+    content: 'Hi Labib! Is the Sony a7IV kit available for pickup this coming Tuesday morning around 9:00 AM at Banani?',
     createdAt: '2026-10-17T10:30:00Z',
     read: true
   },
@@ -377,7 +396,7 @@ export const initialMessages: Message[] = [
     senderId: 'usr_2',
     receiverId: 'usr_1',
     listingId: 'lst_1',
-    content: 'Hey Tanvir! Yes, it is fully available, tested, and all 3 batteries will be charged to 100%. See you Tuesday morning!',
+    content: 'Hey Raisul! Yes, it is fully available, tested, and all 3 batteries will be charged to 100%. See you Tuesday morning!',
     createdAt: '2026-10-17T11:05:00Z',
     read: true
   },
@@ -386,7 +405,7 @@ export const initialMessages: Message[] = [
     senderId: 'usr_3',
     receiverId: 'usr_1',
     listingId: 'lst_2',
-    content: 'Hello Tanvir! Thank you for requesting The Daylight Loft in Dhanmondi. We have prepared the Wi-Fi credentials and floor plan for your shoot.',
+    content: 'Hello Raisul! Thank you for requesting The Daylight Loft in Dhanmondi. We have prepared the Wi-Fi credentials and floor plan for your shoot.',
     createdAt: '2026-10-18T14:15:00Z',
     read: true
   }
